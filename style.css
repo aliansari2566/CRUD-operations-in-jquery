@@ -1,0 +1,54 @@
+.trow{
+    border: 1px solid #333;
+}
+table td th {
+    border: 1px solid black;
+  }
+  
+  /* table {
+    border-collapse: collapse;
+    width: 100%;
+  } */
+  table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  table td, table th {
+    border: 1px solid rgb(211, 42, 42);
+    padding: 8px;
+  }
+  
+  
+  
+  table tr:hover {background-color: #ddd;}
+  
+  /* table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  } */
+
+ .findname {
+    
+   
+    float: right;
+    
+    width: 300px;
+    border: 3px solid #73AD21;
+  }
+ #form{
+
+    margin-right: 5px;
+    padding-right: 5px;
+    border: 2px dotted purple;
+ }
+ #form ln,fn,age {
+
+    margin-right: 5px;
+    padding-right: 5px;
+    border: 2px dotted purple;
+ }

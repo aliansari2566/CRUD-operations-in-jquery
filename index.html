@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="/index.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="new.js"></script>
+  <!-- CSS only -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+</head>
+
+<body>
+  
+
+  <form action="" id="form" name="mytable">
+
+    
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="firstname" placeholder="enter your firstname">
+    <br>
+    <label for="fname">Last name:</label><br>
+    <input type="text" id="lname" name="lastname" placeholder="enter yout last name">
+    <br>
+    <label for="fname">Age:</label><br>
+    <input type="text" id="age" name="age" placeholder="enter yout age">
+
+    <button type="button" class="btn btn-success" onclick="display()">submit
+     
+    </button>
+    <div style="display:none ;" class="alert alert-primary" id="submitalert" role="alert">
+      A simple primary alert—check it out!
+    </div>
+   
+
+
+  </form>
+
+
+
+
+
+
+
+  <table style="margin-top: 3em; " class="table ">
+    <thead>
+      <tr>
+        <th style=" display: flex; justify-content: center; ">Record</th>
+      </tr>
+    </thead>
+
+
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Age</th>
+    </tr>
+
+    <tbody class="table-group-divider" id="result">
+      <!-- <tr>
+            <th scope="row">1</th>
+            <td></td>
+            <td></td>
+                    </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          -->
+    </tbody>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Record update</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            firstname<input type="text" id="ufname" name="firstname" placeholder="enter your firstname">
+            <br>
+            lastname<input type="text" id="ulname" name="lastname" placeholder="enter yout last name">
+            <br>
+            Age<input type="text" id="uage" name="uage" placeholder="enter yout age">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" onclick="change()" >Save changes
+
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="findname">
+      <input type="text" id="searchn" placeholder="Enter name to seacrh" onkeyup="empty()">
+      <input type="button" class="btn btn-outline-success" value="search" onclick="find()">
+    </div>
+</body>
+
+
+
+
+</html>
